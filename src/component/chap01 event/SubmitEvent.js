@@ -25,7 +25,7 @@ const SubmitEvent = () => {
         //CSS파일에 먹이고 싶다면,
         //CSS파일하나만들자. style.css라고 새파일 하나 만들어주고,
         //버튼에 style다지워주고 맨위에 임포트해주자.
-        
+
 
     }
 
