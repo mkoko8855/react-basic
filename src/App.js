@@ -2,20 +2,10 @@
 import './App.css';
 import Hello from './Hello';
 import Sayhello from './Sayhello';
+import ClickEvent from './component/chap01 event/ClickEvent';
+import SubmitEvent from './component/chap01 event/SubmitEvent';
 
-
-
-
-function App() {
-  const looping = () => {
-    const helloList = []; //반복문 5바퀴 돌때마다 hellolist배열에 추가한다. 세이헬로우를.
-    for(let i=0; i<5; i++){
-      helloList.push(<Sayhello/>);
-    }    
-    return helloList;
-  }
-  return (
-    //일단 주석 처리 하고 간단한 h1태그 메모를 하고 출력이 되는지 살펴보자.
+//일단 주석 처리 하고 간단한 h1태그 메모를 하고 출력이 되는지 살펴보자.
     //<h1>리액트 초보입니다.</h1>
 
     //리액트 에서는 하나의 컴포넌트가 여러 개 엘리먼트를 반환할 수 있다. (지금 Sayhello.js가면 태그가 여러개지?)
@@ -28,8 +18,19 @@ function App() {
 
     //JSX 문법에서는 스크립트를 코드로 직접 사용이 불가능하다.
     //{} 안에서 함수의 호출문이나 변수참조는 가능하다.
+
+
+function App() {
+  const looping = () => {
+    const helloList = []; 
+    for(let i=0; i<5; i++){
+      helloList.push(<Sayhello/>);
+    }    
+    return helloList;
+  }
+  return (
     <> 
-  { looping()}
+      <SubmitEvent />
     </>
   );
 }
