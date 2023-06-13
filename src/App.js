@@ -6,6 +6,8 @@ import ClickEvent from './component/chap01 event/ClickEvent';
 import SubmitEvent from './component/chap01 event/SubmitEvent';
 import FoodItem from './component/chap02_props/FoodItem';
 import FoodList from './component/chap02_props/FoodList';
+import Counter from './component/chap03_state/Counter';
+import NickName from './component/chap03_state/NickName';
 
 //일단 주석 처리 하고 간단한 h1태그 메모를 하고 출력이 되는지 살펴보자.
     //<h1>리액트 초보입니다.</h1>
@@ -32,7 +34,7 @@ function App() {
   }
   return (
     <> 
-      <FoodList/>
+      <Counter/>
     </>
   );
 }
