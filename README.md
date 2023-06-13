@@ -1,8 +1,4 @@
-react 클론(풀)할 때의 주의할점은 다음과 같다.
-1. 임의로 파일을 만들고 클론하고 cmd에서 npm start 하면 실행이 안된다.
-2. 이그노어에 /node_modules가 추가 되어있다. 이게 없기 때문에 실행이 안된다는 것이다.
-3. 그래서 npm start가 아니라, npm install 이라고 먼저 해줘야 한다.
-4. 그럼 파일 내부에는 node_modules가 생길 것이고, npm start라고 해줘야 서버가 가동된다.
+
 
 # 리액트 프로젝트 시작하기
 
@@ -22,6 +18,15 @@ $ npx create-react-app 프로젝트 이름
 $ cd 프로젝트 폴더로 이동 후
 $ npm start
 ```
+
+
+# git clone 시 주의사항
+임의로 파일을 만들고 클론하고 cmd에서 npm start 하면 실행이 안된다.
+이그노어에 /node_modules가 추가 되어있다. 이게 없기 때문에 실행이 안된다는 것이다.
+그래서 npm start가 아니라, npm install 이라고 먼저 해줘야 한다.
+그럼 파일 내부에는 node_modules가 생길 것이고, npm start라고 해줘야 서버가 가동된다.
+
+
 
 실행을 해보면,
 http://localhost:3000 에서 프론트엔드 서버실행된다.
