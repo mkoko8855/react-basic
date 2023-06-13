@@ -1,5 +1,8 @@
 import React from 'react'
 import FoodItem from './FoodItem';
+import Sayhello from '../../Sayhello';
+
+
 
 const FoodList = () => {
 
@@ -56,8 +59,29 @@ const FoodList = () => {
         */}
         
 
-        {
-            food.foodList.map(f => <FoodItem foodName={f.fName} price={f.price} foodId={f.id}/>)
+        
+           {/**/}
+            <Sayhello>
+                <a href='https://www.naver.com'>네이버 링크</a>
+            </Sayhello>
+            <Sayhello>
+                <a href='https://www.google.com'>구글 링크</a>
+            </Sayhello>
+            {/*a라는 요소 자체를 썼다. Sayhello.js로가서 props를써주자
+            sayhello를 호출하면서 a링크라는 요소를 감싸고있는데,
+            즉, 부모에서 sayhello를 호출하면서 감싸고있는 자식요소인 a링크를 전달할 때,
+            자식인 sayhello.js에서 props로 부모가 보낸 것을 받고 표현을 props.children을 적었다.
+            */}
+
+        
+           
+           
+           
+           
+           
+           
+           {
+           food.foodList.map(f => <FoodItem foodName={f.fName} price={f.price} foodId={f.id}/>)
                 //맵의 역할은 배열안에 있는 값(객체)이 콜백함수의 매개변수로 하나씩 들여온다.
                 //그리고 나서 처리할 내용을 적어주면 된다.
 
