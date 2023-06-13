@@ -2,7 +2,7 @@
 # 리액트 프로젝트 시작하기
 
 1. node.js 설치 (LTS 버전으로)
-2. create-react-app 설치(최초 1번만 진행하면됨)
+2. create-react-app 설치(최초 1번만 진행하면됨, 이후 어디든 3번부터 바로 시작하면됨)
 ```
 $ npm install -g create-react-app
 
